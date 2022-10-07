@@ -1,4 +1,5 @@
 name: Tag GitHub release
+on: push
 
 jobs:
   publish:

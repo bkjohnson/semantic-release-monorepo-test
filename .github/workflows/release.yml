@@ -15,6 +15,7 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+        working-directory: packages/foo
 
       - name: Run npx semantic-release & create Github Release,
         run: npx semantic-release

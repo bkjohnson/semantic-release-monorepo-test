@@ -18,7 +18,7 @@ jobs:
         working-directory: packages/foo
 
       - name: Run npx semantic-release & create Github Release,
-        run: npx semantic-release
+        run: npx semantic-release -e semantic-release-monorepo
         working-directory: packages/foo
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}

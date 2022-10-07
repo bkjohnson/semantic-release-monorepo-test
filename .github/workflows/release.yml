@@ -13,13 +13,22 @@ jobs:
           node-version: 14.x
           cache: 'yarn'
 
-      - name: Install dependencies
+      - name: Install foo dependencies
         run: yarn install
         working-directory: packages/foo
 
-      - name: Run npx semantic-release & create Github Release,
+      - name: Install bar dependencies
+        run: yarn install
+        working-directory: packages/bar
+
+      - name: Run semantic-release on foo,
         run: npx semantic-release -e semantic-release-monorepo
         working-directory: packages/foo
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
 
+      - name: Run semantic-release on bar,
+        run: npx semantic-release -e semantic-release-monorepo
+        working-directory: packages/bar
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}

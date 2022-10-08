@@ -1,6 +1,7 @@
 {
   "name": "bar",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "main": "src/index.js",
   "devDependencies": {
     "semantic-release": "^19.0.5",
     "semantic-release-monorepo": "^7.0.5"

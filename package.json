@@ -1,7 +1,7 @@
 {
   "name": "semantic-release-monorepo-test",
   "version": "0.0.1",
-  "description": "Testing for semantic-release-monorepo config TEST CHANGE ANOTHER REQUIRE PR REVIEWS",
+  "description": "Testing for semantic-release-monorepo config",
   "main": "index.js",
   "repository": "git@github.com:bkjohnson/semantic-release-monorepo-test.git",
   "license": "MIT",
